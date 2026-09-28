@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | All Stars Barber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación Principal -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-star"></i> <span>ALL STARS</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html" class="active">Servicios</a>
+                <a href="barberos.html">Barberos</a>
+                <a href="index.html#reserva-section" class="btn-nav-reserva ripple">Reservar Cita</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
+                <button class="hamburger" id="hamburger" aria-label="Menú"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="barberos.html">Barberos</a>
+        <a href="index.html#reserva-section">Reservar Cita</a>
+    </div>
+
+    <!-- Header de Página -->
+    <section class="page-header">
+        <div class="container fade-in">
+            <h1>Nuestros <span class="gold-text">Servicios Estelares</span></h1>
+            <p>Descubre nuestra gama de cortes profesionales, afeitados con toalla caliente y tratamientos de alta precisión.</p>
+        </div>
+    </section>
+
+    <!-- Filtro Interactivo y Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="filter-buttons fade-in">
+                <button class="filter-btn active ripple" data-filter="all">Todos</button>
+                <button class="filter-btn ripple" data-filter="corte">Cortes</button>
+                <button class="filter-btn ripple" data-filter="barba">Barba & Afeitado</button>
+                <button class="filter-btn ripple" data-filter="especial">Especiales</button>
+            </div>
+
+            <div class="services-grid" id="servicesGrid">
+                <!-- Servicio 1 -->
+                <div class="service-card glass-card tilt-card fade-in" data-category="corte">
+                    <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <div class="service-info">
+                        <h3>Corte Desvanecido / Fade</h3>
+                        <p>Técnica moderna de difuminado al ras con acabados milimétricos y estilizados.</p>
+                        <span class="price">$10.000</span>
+                    </div>
+                    <a href="index.html#reserva-section" class="btn btn-outline-gold ripple">Reservar</a>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="service-card glass-card tilt-card fade-in" data-category="barba">
+                    <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="service-info">
+                        <h3>Mantenimiento de Barba</h3>
+                        <p>Perfilado, rebaje con tijera/máquina, toalla caliente y bálsamo hidratante.</p>
+                        <span class="price">$7.000</span>
+                    </div>
+                    <a href="index.html#reserva-section" class="btn btn-outline-gold ripple">Reservar</a>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="service-card glass-card tilt-card fade-in" data-category="corte">
+                    <div class="service-icon"><i class="fa-solid fa-crown"></i></div>
+                    <div class="service-info">
+                        <h3>Corte Personalizado All Star</h3>
+                        <p>Asesoría de imagen completa, corte a tu medida y lavado capilar incluido.</p>
+                        <span class="price">$12.000</span>
+                    </div>
+                    <a href="index.html#reserva-section" class="btn btn-outline-gold ripple">Reservar</a>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="service-card glass-card tilt-card fade-in" data-category="barba">
+                    <div class="service-icon"><i class="fa-solid fa-feather"></i></div>
+                    <div class="service-info">
+                        <h3>Afeitado con Navaja</h3>
+                        <p>Afeitado tradicional con espuma densa, toalla caliente y navaja estéril.</p>
+                        <span class="price">$8.000</span>
+                    </div>
+                    <a href="index.html#reserva-section" class="btn btn-outline-gold ripple">Reservar</a>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="service-card glass-card tilt-card fade-in" data-category="corte">
+                    <div class="service-icon"><i class="fa-solid fa-child"></i></div>
+                    <div class="service-info">
+                        <h3>Cortes para Niños</h3>
+                        <p>Paciencia, buen trato y estilo impecable para los más pequeños del hogar.</p>
+                        <span class="price">$8.000</span>
+                    </div>
+                    <a href="index.html#reserva-section" class="btn btn-outline-gold ripple">Reservar</a>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="service-card glass-card tilt-card fade-in" data-category="especial">
+                    <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                    <div class="service-info">
+                        <h3>Tintura de Cabello / Color</h3>
+                        <p>Cambios de look, camuflaje de canas o decoloración profesional.</p>
+                        <span class="price">$15.000+</span>
+                    </div>
+                    <a href="index.html#reserva-section" class="btn btn-outline-gold ripple">Reservar</a>
+                </div>
+
+                <!-- Servicio 7 -->
+                <div class="service-card glass-card tilt-card fade-in" data-category="corte">
+                    <div class="service-icon"><i class="fa-solid fa-hat-cowboy"></i></div>
+                    <div class="service-info">
+                        <h3>Corte Militar / Rapado</h3>
+                        <p>Corte uniforme al número de preferencia con terminaciones perfectas.</p>
+                        <span class="price">$7.000</span>
+                    </div>
+                    <a href="index.html#reserva-section" class="btn btn-outline-gold ripple">Reservar</a>
+                </div>
+
+                <!-- Servicio 8 -->
+                <div class="service-card glass-card tilt-card fade-in" data-category="especial">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="service-info">
+                        <h3>Recorte de Cejas & Detalles</h3>
+                        <p>Limpieza y perfilado de cejas con navaja para un rostro limpio y definido.</p>
+                        <span class="price">$4.000</span>
+                    </div>
+                    <a href="index.html#reserva-section" class="btn btn-outline-gold ripple">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/56959356209?text=Hola%20Pablito,%20quiero%20consultar%20por%20los%20servicios" class="whatsapp-float ripple" target="_blank" rel="noopener noreferrer" aria-label="Chat de WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>ALL • STARS • BARBER</h3>
+                <p>La Barbería de las Estrellas en Puente Alto.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="barberos.html">Barberos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Av. San Carlos 01283, Puente Alto</p>
+                <p><i class="fa-solid fa-phone"></i> +56 9 5935 6209</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Barbería All Star 37 (@all_star_barber37). Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Stars Barber | Barbería Prémium en Puente Alto</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loader de Entrada Estelar -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-star-glow"><i class="fa-solid fa-star"></i></div>
+            <h2>ALL • STARS • BARBER</h2>
+            <p>La Barbería de las Estrellas • Puente Alto</p>
+        </div>
+    </div>
+
+    <!-- Navegación Principal -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-star"></i> <span>ALL STARS</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="barberos.html">Barberos</a>
+                <a href="https://instagram.com/all_star_barber37" target="_blank" rel="noopener noreferrer" class="nav-insta-link"><i class="fa-brands fa-instagram"></i> @all_star_barber37</a>
+                <a href="#reserva-section" class="btn-nav-reserva ripple">Reservar Cita</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
+                <button class="hamburger" id="hamburger" aria-label="Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="barberos.html">Barberos</a>
+        <a href="https://instagram.com/all_star_barber37" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Ver Instagram (@all_star_barber37)</a>
+        <a href="#reserva-section">Reservar Cita</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <div class="badge-star tilt-card">
+                <i class="fa-solid fa-star"></i> 4.7 ⭐ Google Maps
+            </div>
+            <h1>EL ARTE DE LA BARBERÍA<br><span class="gold-text">EN EL ALTO NIVEL</span></h1>
+            <p>Cortes modernos, desvanecidos precisos, barbas impecables y una atención de categoría mundial junto a Pablito y su equipo estelar.</p>
+            <div class="hero-btns">
+                <a href="#reserva-section" class="btn btn-gold ripple"><i class="fa-brands fa-whatsapp"></i> Reservar con Pablito</a>
+                <a href="https://instagram.com/all_star_barber37" target="_blank" rel="noopener noreferrer" class="btn btn-outline ripple"><i class="fa-brands fa-instagram"></i> Ver Trabajos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Widget Infinito de Reseñas Google Maps -->
+    <section class="reviews-ticker">
+        <div class="ticker-container">
+            <div class="ticker-track">
+                <div class="review-card glass-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excelente atención, muy limpio y ordenado. Pablito es un maestro absoluto con el desvanecido."</p>
+                    <span>- Ignacio M. (Google Maps)</span>
+                </div>
+                <div class="review-card glass-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"La mejor barbería de Puente Alto sin duda. Muy buena onda, puntualidad y ambiente agradable."</p>
+                    <span>- Matías V. (Google Maps)</span>
+                </div>
+                <div class="review-card glass-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Impecable el local, muy profesionales con los cortes. 100% recomendado el paso por Av. San Carlos."</p>
+                    <span>- Esteban R. (Google Maps)</span>
+                </div>
+                <div class="review-card glass-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excelente servicio y cortes con acabado perfecto. La mejor experiencia en Puente Alto."</p>
+                    <span>- Sebastián K. (Google Maps)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Estelar con Lightbox -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Galería <span class="gold-text">Estelar</span></h2>
+                <p>Explora nuestros últimos cortes y diseños realizados en la barbería. Haz clic para ampliar.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item tilt-card" onclick="openLightbox('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80" alt="Fade Moderno All Stars" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item tilt-card" onclick="openLightbox('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Corte y Barba Precisa" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item tilt-card" onclick="openLightbox('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Estilo Clásico Navaja" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item tilt-card" onclick="openLightbox('https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=600&q=80" alt="Diseño y Textura Capilar" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" src="" alt="Ampliada">
+    </div>
+
+    <!-- Widget Interactivo de Reserva -->
+    <section class="reserva-section" id="reserva-section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Reserva Tu Cita <span class="gold-text">Online</span></h2>
+                <p>Selecciona tu servicio, barbero y horario. Te conectaremos directo al WhatsApp de Pablito (+56 9 5935 6209).</p>
+            </div>
+
+            <div class="booking-grid">
+                <!-- Formulario Paso a Paso con Tilt -->
+                <div class="booking-card glass-card tilt-card fade-in">
+                    <form id="bookingForm">
+                        <div class="form-step active" id="step-1">
+                            <h3>1. Selecciona el Servicio</h3>
+                            <div class="select-grid">
+                                <label class="select-option">
+                                    <input type="radio" name="service" value="Corte Degradado / Desvanecido ($10.000)" required>
+                                    <div class="option-box">
+                                        <i class="fa-solid fa-scissors"></i>
+                                        <span>Corte Desvanecido / Fade</span>
+                                        <span class="opt-price">$10.000</span>
+                                    </div>
+                                </label>
+                                <label class="select-option">
+                                    <input type="radio" name="service" value="Corte + Mantenimiento de Barba ($14.000)">
+                                    <div class="option-box">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                        <span>Corte + Barba Completa</span>
+                                        <span class="opt-price">$14.000</span>
+                                    </div>
+                                </label>
+                                <label class="select-option">
+                                    <input type="radio" name="service" value="Corte Niños ($8.000)">
+                                    <div class="option-box">
+                                        <i class="fa-solid fa-child"></i>
+                                        <span>Corte para Niños</span>
+                                        <span class="opt-price">$8.000</span>
+                                    </div>
+                                </label>
+                                <label class="select-option">
+                                    <input type="radio" name="service" value="Afeitado Tradicional con Navaja ($8.000)">
+                                    <div class="option-box">
+                                        <i class="fa-solid fa-feather"></i>
+                                        <span>Afeitado con Navaja</span>
+                                        <span class="opt-price">$8.000</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-gold ripple next-step-btn" onclick="nextStep(2)">Continuar</button>
+                        </div>
+
+                        <div class="form-step" id="step-2">
+                            <h3>2. Elige tu Barbero</h3>
+                            <div class="select-grid">
+                                <label class="select-option">
+                                    <input type="radio" name="barber" value="Pablito (Master Barber)" required>
+                                    <div class="option-box">
+                                        <i class="fa-solid fa-crown"></i>
+                                        <span>Pablito (Master Barber)</span>
+                                        <span class="opt-price">Fundador</span>
+                                    </div>
+                                </label>
+                                <label class="select-option">
+                                    <input type="radio" name="barber" value="Cualquier Barbero Disponible">
+                                    <div class="option-box">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>Primer Barbero Libre</span>
+                                        <span class="opt-price">Staff</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn btn-outline ripple" onclick="prevStep(1)">Atrás</button>
+                                <button type="button" class="btn btn-gold ripple next-step-btn" onclick="nextStep(3)">Continuar</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step-3">
+                            <h3>3. Fecha, Hora y Datos</h3>
+                            <div class="input-group">
+                                <label for="bookingDate"><i class="fa-solid fa-calendar-days"></i> Fecha deseada:</label>
+                                <input type="date" id="bookingDate" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="bookingTime"><i class="fa-solid fa-clock"></i> Hora (Lunes a Domingo 11:00 - 21:00):</label>
+                                <select id="bookingTime" required>
+                                    <option value="">Selecciona un horario</option>
+                                    <option value="11:00">11:00 hrs</option>
+                                    <option value="12:00">12:00 hrs</option>
+                                    <option value="13:00">13:00 hrs</option>
+                                    <option value="15:00">15:00 hrs</option>
+                                    <option value="16:00">16:00 hrs</option>
+                                    <option value="17:00">17:00 hrs</option>
+                                    <option value="18:00">18:00 hrs</option>
+                                    <option value="19:00">19:00 hrs</option>
+                                    <option value="20:00">20:00 hrs</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="clientName"><i class="fa-solid fa-user"></i> Tu Nombre:</label>
+                                <input type="text" id="clientName" placeholder="Ej. Carlos Pérez" required>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn btn-outline ripple" onclick="prevStep(2)">Atrás</button>
+                                <button type="submit" class="btn btn-gold ripple"><i class="fa-brands fa-whatsapp"></i> Confirmar Cita por WhatsApp</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Info Card con Google Maps -->
+                <div class="booking-info glass-card tilt-card fade-in">
+                    <h3><i class="fa-solid fa-location-dot gold-text"></i> Ubicación y Contacto</h3>
+                    <p><strong>Dirección:</strong> Av. San Carlos 01283, Puente Alto (con Diaguitas), Santiago.</p>
+                    <p><strong>Horarios:</strong> Lunes a Domingo de 11:00 a 21:00 hrs.</p>
+                    <p><strong>Teléfono / WhatsApp:</strong> +56 9 5935 6209</p>
+                    <p><strong>Instagram Oficial:</strong> <a href="https://instagram.com/all_star_barber37" target="_blank" rel="noopener noreferrer" class="gold-text">@all_star_barber37</a></p>
+                    <div class="map-container">
+                        <iframe title="Ubicación Barbería All Star 37" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.2384!2d-70.57!3d-33.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzQ4LjgiUyA3MMKwMzQnMTIuMCJX!5e0!3m2!1ses!2scl!4v1620000000000!5m2!1ses!2scl" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/56959356209?text=Hola%20Pablito,%20quiero%20consultar%20por%20una%20hora%20en%20All%20Stars%20Barber" class="whatsapp-float ripple" target="_blank" rel="noopener noreferrer" aria-label="Chat de WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>ALL • STARS • BARBER</h3>
+                <p>La Barbería de las Estrellas en Puente Alto. Precisión quirúrgica, estilo y calidad insuperable.</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/all_star_barber37" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/56959356209" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="barberos.html">Barberos</a></li>
+                    <li><a href="#reserva-section">Reservar Cita</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto Directo</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Av. San Carlos 01283, Puente Alto</p>
+                <p><i class="fa-solid fa-phone"></i> +56 9 5935 6209</p>
+                <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/all_star_barber37" target="_blank" rel="noopener noreferrer">@all_star_barber37</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Barbería All Star 37 (@all_star_barber37). Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
